@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  STRIPE_KEY:"pk_test_51MT5vFAOe0ZJOzoTtuKFJZvfxMzrFXRbwenPq2obp0yykfm23WAF6iy02xWjpFi9XWd0XGMZtDMaMaPlxehNGXmA00Ye2ZO7Iz",
+  PRODUCTS_URL:"https://fakestoreapi.com/products"
 };
 
 /*

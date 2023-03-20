@@ -1,0 +1,48 @@
+
+.item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    .detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .title{
+            font-size: small;
+        }
+        #price{
+            color: var(--gold);
+            font-weight: bold;
+        }
+        table,tr{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 90px;
+         }
+         td{
+             padding: 5px;
+             text-align: center;
+            &:first-child, &:last-child{
+                cursor: pointer;
+            }
+         }
+        
+    }
+    img{
+        scale:.8;
+        width: 150px;
+        height: 200px;
+        padding:0;
+    }
+    #remove{
+        color:gray;
+        margin-left: auto;
+        cursor: pointer;
+        align-self: flex-end ;
+        padding-bottom: 20px;
+    }
+    
+   
+}
+
+

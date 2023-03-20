@@ -1,0 +1,22 @@
+<ng-template [ngIf]="isOpen">
+    <div class="overlay">
+    <div  @slide  class="sidebar" >
+        
+        <span class="closebtn" (click)="isOpen=false" >&times;</span>
+        <h2>My Cart</h2>
+        <ng-container *ngIf="items.length==0">
+            <app-empty></app-empty>
+        </ng-container>
+        <div *ngIf="items.length>0" class="listitems" >
+            <ng-container  *ngFor="let item of items" >
+            <app-cart-item [item]="item"></app-cart-item>
+            </ng-container>
+            <div class="footer">
+            <section class="total">Total: <span id="price">{{(total|async)|currency}}</span></section>
+            <button>CheckOut</button>
+            <button routerLink="../home" >Back to Shopping</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </ng-template>

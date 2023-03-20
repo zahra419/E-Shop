@@ -1,0 +1,18 @@
+<div #cart></div>
+    <div class="header">
+        <img src="../assets/shop.png"
+        alt=""/>
+        <ul>
+            <li (click)="openCart()" ><span id="badge" *ngIf="totalItems|async">{{totalItems|async}}</span><a  class="material-symbols-outlined">shopping_cart</a></li>
+    
+            
+        </ul>
+       
+    </div>
+    
+    
+    
+
+    
+    
+ 

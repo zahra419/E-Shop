@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { LengthreducerPipe } from './shared/pipes/lengthreducer.pipe';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,13 +25,8 @@ describe('AppComponent', () => {
   it(`should have as title 'e-shop'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('e-shop');
+    expect(app.title).toEqual('E-Shop');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('e-shop app is running!');
-  });
+ 
 });

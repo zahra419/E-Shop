@@ -1,0 +1,15 @@
+<div class="container">
+<app-sidebar (itemEmitter)="onChangeCategory($event)"></app-sidebar>
+<div class="item" *ngIf="products.length>0" >
+    <ng-container *ngFor="let product of products | paginate:{ itemsPerPage:10, currentPage: page}" >
+      <app-item [item]="product" routerLink="product/detail/{{product.id}}"
+      ></app-item>
+      </ng-container>
+          </div>
+  
+          <pagination-controls class="pagination"
+            [responsive]="true"
+            [maxSize]="9"
+            (pageChange)="page=$event"
+          ></pagination-controls>
+        </div>

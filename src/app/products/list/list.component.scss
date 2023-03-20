@@ -1,0 +1,18 @@
+.container{
+    margin:5rem 0;
+.item{
+    max-width: 80em;
+    padding: 35px;
+    margin:2em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(16em,1fr));
+    gap:20px;
+}
+.pagination ::ng-deep .ngx-pagination .current {
+    background-color: black;
+    border-radius: 50%;
+}
+.pagination{
+    text-align: center;
+}
+}
