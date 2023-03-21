@@ -20,7 +20,6 @@ export class ListComponent implements OnInit,OnDestroy {
   }
   getProducts(){
     this.subscribtion=this.productservice.getProducts(this.category).subscribe((_data)=>this.products=_data, error=>this.router.navigateByUrl('error'));
-    
   }
   onChangeCategory(category:string):void {
     this.category=category;
